@@ -456,7 +456,7 @@ const GridView = memo((props: GridViewProps) => {
           style={[
             style,
             {
-              transform: pos.getTranslateTransform(),
+              transform: pos.getTranslateTransform() as any,
               opacity,
             },
           ]}
